@@ -17,6 +17,7 @@ class Event extends Model
         "event_location_name",
         "event_meetup_url",
         "event_is_virtual",
+        "fk_venue_event"
     ];
 
     //Nombre en singular porque pertenece a un unico escenario un evento

@@ -28,7 +28,8 @@ class EventRequest extends FormRequest
             "event_speaker_name"=> ["string", "max:256"],
             "event_location_name"=> ["string"],
             "event_meetup_url"=> ["string"],
-            "event_is_virtual"=> ["accepted"]
+            "event_is_virtual"=> ["accepted"],
+            'fk_venue_event' => ['nullable|exists:venues,id'],
         ];
     }
 }
